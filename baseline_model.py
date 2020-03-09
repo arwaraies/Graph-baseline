@@ -103,7 +103,6 @@ def sample_negative_edges_other_ideas(G, test_edges):
         rhs = edge[1]
         rhs_type = node_types[rhs]
         
-        #possible_nodes = all_possible_nodes[rhs_type] - {G.neighbors(lhs)} - {lhs}
         possible_nodes = all_possible_nodes[rhs_type] - all_neighbors[lhs] - {lhs}
         #possible_nodes = list(all_possible_nodes[rhs_type] - {G.neighbors(lhs)} - {lhs})
         #possible_nodes = list(all_possible_nodes[rhs_type] - all_neighbors[lhs] - {lhs})
