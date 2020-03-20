@@ -190,8 +190,6 @@ def calculate_scores(G,target_edges,all_edges,model):
                str(mean(r1))+'\t'+str(mean(r10))+'\t'+str(mean(r50))+'\n')
     fout.close()
     
-    #return [mean(rank), mean(reciprocal_rank), mean(r1), mean(r10), mean(r50)]
-
 print('read data')
 #read the data
 fin = open('v03/full.txt','r')
