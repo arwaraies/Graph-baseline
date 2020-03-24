@@ -61,18 +61,6 @@ def sample_negative_edges(G, test_edges):
             new_node = choice(possible_nodes)
             neg_edges.append((lhs,new_node))
             G.add_edge(lhs,new_node)
-           
-        #new_node = choice(possible_nodes)
-        #sample_size = len(possible_nodes)
-        #count = 0
-        
-        #while node_types[new_node] != rhs_type and count < sample_size:
-        #    new_node = choice(possible_nodes)
-        #    count+=1
-            
-        #neg_edges.append((lhs,new_node))
-        
-        #G.add_edge(lhs,new_node)
 
     G.remove_edges_from(neg_edges)
     
